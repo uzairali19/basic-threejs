@@ -17,6 +17,7 @@
       "no-console":"off",
       "no-param-reassign": "off",
       "eol-last": "off",
+      "comma-dangle":"off",
       "import/extensions": [ 1, {
         "js": "always", "json": "always"
       }]
