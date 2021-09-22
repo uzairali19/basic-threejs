@@ -1,17 +1,12 @@
 import './style.css';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
-import * as dat from 'dat.gui';
-// import { point } from 'cli-spinners';
 
 // Loading
 
 const textureLoader = new THREE.TextureLoader();
 
 const normalTexture = textureLoader.load('./textures/NormalMap.png');
-
-// Debug
-// const gui = new dat.GUI();
 
 // Canvas
 const canvas = document.querySelector('canvas.webgl');
@@ -42,19 +37,6 @@ pointLight.position.set(-2.2, 2.1, -1.62);
 pointLight.intensity = 10;
 scene.add(pointLight);
 
-// gui.add(pointLight.position, 'x').min(-10).max(10);
-// gui.add(pointLight.position, 'y').min(-10).max(10);
-// gui.add(pointLight.position, 'z').min(-10).max(10);
-// const light = gui.addFolder('light 1');
-
-// const lightColor1 = {
-//   color: 0x404040,
-// };
-
-// light.addColor(lightColor1, 'color').onChange(() => {
-//   pointLight.color.set(lightColor1.color);
-// });
-
 // Light 2
 
 const pointLight2 = new THREE.PointLight(0xe1ff, 0.7);
@@ -63,30 +45,10 @@ pointLight2.intensity = 10;
 
 scene.add(pointLight2);
 
-// const light2 = gui.addFolder('light 2');
-
-// const lightColor2 = {
-//   color: 0x404040,
-// };
-
-// light2.addColor(lightColor2, 'color').onChange(() => {
-//   pointLight2.color.set(lightColor2.color);
-// });
-// Light 3
-
 const pointLight3 = new THREE.PointLight(0x404040, 0.7);
 pointLight3.position.set(2, 3, 4);
 scene.add(pointLight3);
 
-// const light3 = gui.addFolder('light 3');
-
-// const lightColor3 = {
-//   color: 0x404040,
-// };
-
-// light3.addColor(lightColor3, 'color').onChange(() => {
-//   pointLight3.color.set(lightColor3.color);
-// });
 /**
  * Sizes
  */
@@ -125,8 +87,6 @@ camera.position.z = 2;
 scene.add(camera);
 
 // Controls
-// const controls = new OrbitControls(camera, canvas)
-// controls.enableDamping = true
 
 /**
  * Renderer
