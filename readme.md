@@ -1,7 +1,3 @@
-#
-
-## Setup
-
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Three.js Starter Project
